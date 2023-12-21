@@ -1,0 +1,60 @@
+body {
+    background: rgb(172, 203, 238);
+}
+
+.quote-box {
+    width: 700px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.quote-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: "Anton", sans-serif;
+}
+
+.quote-box h2::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: rgb(172, 203, 238);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+    font-family: "Teko", sans-serif;
+    font-size: 2rem;
+    min-height: 110px;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box .author-name span {
+    font-family: "Sriracha", cursive;
+    margin-top: 10px;
+    position: relative;
+}
+
+.quote-box .author-name span::before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: rgb(172, 203, 238);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}

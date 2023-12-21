@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment Two JS</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sriracha&family=Teko:wght@300&display=swap" rel="stylesheet" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="quote-box text-center">
+                    <h2 class="position-relative">Quote Of The Day</h2>
+                    <blockquote id="quote"></blockquote>
+                    <div class="author-name d-flex justify-content-end">
+                        <span class="d-block" id="author"></span>
+                    </div>
+                    <div class="new-quote-btn">
+                        <button class="quote-btn btn btn-primary p-2 px-3" id="quote-btn" onclick="displayQuote()">New Quote</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
